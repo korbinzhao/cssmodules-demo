@@ -9,10 +9,13 @@ class Content extends Component {
 
   render(){
     return (
-      <div className={styles.container}>
-        <p className={styles.text}>Content here!!!</p>
-        <Button className={styles.button}>Click me!!!</Button>
-      </div>
+      <>
+        <div className={styles.container}>
+          <p className={styles.text}>Inner Content here!!!</p>
+          <Button className={styles.button}>Click me!!!</Button>
+        </div>
+        <p className={styles.text}>Outer Content here!!!</p>
+      </>
     );
 
   }
