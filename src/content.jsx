@@ -15,6 +15,9 @@ class Content extends Component {
           <Button className={styles.button}>Click me!!!</Button>
         </div>
         <p className={styles.text}>Outer Content here!!!</p>
+
+        <p className={styles.className}>className</p>
+        <p className={styles.subClass}>subClass</p>
       </>
     );
 

@@ -15,3 +15,18 @@
 .text {
   color: blue;
 }
+
+
+/**
+* 局部变量的组合 composing
+*/
+
+:local(.className) {
+  background: red;
+  color: yellow;
+}
+
+:local(.subClass) {
+  composes: className; // 被覆盖，优先级比 subClass 低
+  background: blue;
+}
